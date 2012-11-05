@@ -1,0 +1,7 @@
+<%= simple_form_for @festival do |f| %>
+
+  <%= f.input :name %>
+  <%= f.association :movies, collection: Movie.all %>
+  <%= f.button :submit %>
+
+<% end %>

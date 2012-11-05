@@ -1,0 +1,10 @@
+<%= simple_form_for @review do |f| %>
+
+	<%= f.input :movie_id, collection: Movie.all %>
+	<%= f.input :author %>
+	<%= f.input :review %>
+	<%= f.input :score %>
+
+	<%= f.button :submit %>
+
+<% end %>
